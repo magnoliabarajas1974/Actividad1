@@ -98,6 +98,30 @@ body {
     transform: translateY(-2px);
 }
 
+.servicios-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.servicios-cards div{
+    border: solid 1px gray;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 20px;
+    transition: all ease 1s;
+    width: 300px;
+}
+
+.servicios-cards div:hover{
+    background-color: lightblue;
+}
+
+.servicios-cards div > h1{
+    font-size: 26px;
+}
+
 /* Footer */
 footer {
     margin-top: auto;
