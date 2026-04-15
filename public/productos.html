@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../src/styles/style.css">
 </head>
+
 <body>
     <!-- Navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -16,7 +18,8 @@
             <a class="navbar-brand" href="../index.html">
                 <strong>Mi Sitio Web</strong>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -43,12 +46,118 @@
         <section class="py-5">
             <div class="container">
                 <h1 class="mb-4">Productos</h1>
-                <div class="alert alert-info" role="alert">
-                    <p>Los productos en esta página aún están siendo desarrollados. Pronto tendremos contenido disponible.</p>
-                    <p>Primero pruebas de productos</p>
+                <div class="alert alert-success" role="alert">
+                    Los productos en esta página están disponible.
+                </div>
+
+                <div class="row g-4">
+
+                    <section class="col-12">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <h2 class="h5 mb-0">Productos</h2>
+                            <div class="text-muted small" id="productsCount">Mostrando 4 productos</div>
+                        </div>
+
+                        <div class="row g-4" id="productsGrid">
+
+                            <div class="col-12 col-sm-6">
+                                <div class="card h-100 shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1200&auto=format&fit=crop"
+                                        class="card-img-top product-img" alt="Producto 1" />
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <p class="card-title mb-1">Auriculares Bluetooth</p>
+                                            <span class="badge text-bg-success">En stock</span>
+                                        </div>
+                                        <p class="card-text text-muted small mb-2">Categoría: Audio</p>
+                                        <p class="fw-semibold mb-0">COP $159.900</p>
+                                    </div>
+                                    <div class="card-footer bg-white">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm" title="Editar">
+                                            <i class="bi bi-pencil-square"></i> Editar
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm" title="Eliminar">
+                                            <i class="bi bi-trash3"></i> Eliminar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6">
+                                <div class="card h-100 shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200&auto=format&fit=crop"
+                                        class="card-img-top product-img" alt="Producto 2" />
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <p class="card-title mb-1">Teclado Mecánico</p>
+                                            <span class="badge text-bg-warning text-dark">Pocas unidades</span>
+                                        </div>
+                                        <p class="card-text text-muted small mb-2">Categoría: Periféricos</p>
+                                        <p class="fw-semibold mb-0">COP $249.000</p>
+                                    </div>
+                                    <div class="card-footer bg-white">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm">
+                                            <i class="bi bi-pencil-square"></i> Editar
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm">
+                                            <i class="bi bi-trash3"></i> Eliminar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6">
+                                <div class="card h-100 shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?q=80&w=1200&auto=format&fit=crop"
+                                        class="card-img-top product-img" alt="Producto 5" />
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <p class="card-title mb-1">Mouse Inalámbrico</p>
+                                            <span class="badge text-bg-success">En stock</span>
+                                        </div>
+                                        <p class="card-text text-muted small mb-2">Categoría: Periféricos</p>
+                                        <p class="fw-semibold mb-0">COP $49.900</p>
+                                    </div>
+                                    <div class="card-footer bg-white">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm">
+                                            <i class="bi bi-pencil-square"></i> Editar
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm">
+                                            <i class="bi bi-trash3"></i> Eliminar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6">
+                                <div class="card h-100 shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop"
+                                        class="card-img-top product-img" alt="Producto 6" />
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <p class="card-title mb-1">SSD 1TB</p>
+                                            <span class="badge text-bg-warning text-dark">Pocas unidades</span>
+                                        </div>
+                                        <p class="card-text text-muted small mb-2">Categoría: Almacenamiento</p>
+                                        <p class="fw-semibold mb-0">COP $399.000</p>
+                                    </div>
+                                    <div class="card-footer bg-white">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm">
+                                            <i class="bi bi-pencil-square"></i> Editar
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm">
+                                            <i class="bi bi-trash3"></i> Eliminar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
+
         </section>
+
     </main>
 
     <!-- Footer -->
@@ -64,4 +173,5 @@
     <!-- Custom JS -->
     <script src="../src/scripts/script.js"></script>
 </body>
+
 </html>
